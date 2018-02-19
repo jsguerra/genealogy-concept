@@ -1,2 +1,2 @@
-# genealogy-concept
-A genealogy website design for a personal family tree
+# HTML5 Genealogy website concept
+An HTML5 genealogy website concept for a personal family tree.
