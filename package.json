@@ -1,19 +1,19 @@
 {
-  "name": "webpack-starter",
+  "name": "genealogy-concept",
   "version": "1.0.0",
-  "description": "",
+  "description": "A genealogy concept website for personal project",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production"
   },
   "keywords": [],
-  "homepage": "https://github.com/jsguerra/webpack-4-build.git",
+  "homepage": "https://github.com/jsguerra/genealogy-concept.git",
   "author": "Jose Guerra",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jsguerra/webpack-4-build.git"
+    "url": "git+https://github.com/jsguerra/genealogy-concept.git"
   },
   "browserslist": [
     "last 2 versions"
