@@ -4,4 +4,11 @@
 // Utilities import
 @import 'utilities/variables';
 
-// Other Stuff
+// Element settings - Typography, etc
+@import 'elements/tables';
+
+// Layout
+@import 'layout/layout',
+        'layout/header',
+        'layout/main',
+        'layout/footer';
