@@ -22,6 +22,11 @@
 				<h2>Example Pedgree Chart</h2>
 				<table>
 					<tbody>
+            <tr>
+              <th>Home Person</th>
+              <th>Parents</th>
+              <th>Grand Parents</th>
+            </tr>
 						<tr>
 							<td rowspan="4" class="person line-bottom">Descendant</td>
 							<td rowspan="2" class="person line-bottom">Ancestor</td>
@@ -61,30 +66,37 @@
 			&copy; 2018 Pedigree concept
 		</footer>
 		<script>
-			var pedigree = {
-				"name":"John Doe",
-				"born":1974,
-				"died":"living",
-					"father":{
-						"name":"John Doe Sr",
-							"father":{
-								"name":"John Doe Grand"
-							},
-							"mother":{
-								"name":"Jane Jill"
-							}
-					},
-					"mother":{
-						"name":"Mary Jane",
-							"father":{
-								"name":"John Jane"
-							},
-							"mother":{
-								"name":"Jill Jane"
-							}
-					}
-				};
-			console.log(pedigree);
+      ;(function (window, document, undefined) {
+
+      'use strict';
+
+			const pedigree = {
+        "homePerson":"John Doe",
+        "born":1974,
+        "died":"living",
+          "father":{
+            "name":"John Doe Sr",
+              "grandFather":{
+                "name":"John Doe Grand"
+              },
+              "grandMother":{
+                "name":"Jane Jill"
+              }
+          },
+          "mother":{
+            "name":"Mary Jane",
+              "grandFather":{
+                "name":"John Jane"
+              },
+              "grandMother":{
+                "name":"Jill Jane"
+              }
+          }
+			};
+
+			console.log(pedigree.homePerson);
+
+      })(window, document)
 		</script>
 	</body>
 </html>
