@@ -15,8 +15,8 @@
 		<main>
 			<article class="container">
 				<header>
-						<h1>Genealogy Pedigree Concept</h1>
-						<p class="lead-text">This tree is a table based tree</p>
+					<h1>Genealogy Pedigree Concept</h1>
+					<p class="lead-text">This tree is a table based tree</p>
 				</header>
 				<div class="pedigree-container">
 						<h2>Example Pedgree Chart</h2>
@@ -82,7 +82,14 @@
 		<footer>
 			&copy; 2018 Pedigree concept
 		</footer>
-		<script>
+		<script type="text/javascript" src="main.js"></script>
+		<script type="module">
+			import { Person } from "./main.js";
+
+			const homePerson = new Person();
+
+			console.log(homePerson);
+
       ;(function (window, document, undefined) {
 
       'use strict';
