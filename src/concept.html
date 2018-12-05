@@ -84,41 +84,46 @@
 		</footer>
 		<script type="text/javascript" src="main.js"></script>
 		<script type="module">
-			import { Person } from "./main.js";
-
-			const homePerson = new Person();
-
-			console.log(homePerson);
 
       ;(function (window, document, undefined) {
 
       'use strict';
 
-			const pedigree = {
-        "homePerson":"John Doe",
-        "born":1974,
-        "died":"living",
-          "father":{
-            "name":"John Doe Sr",
-              "grandFather":{
-                "name":"John Doe Grand"
-              },
-              "grandMother":{
-                "name":"Jane Jill"
-              }
-          },
-          "mother":{
-            "name":"Mary Jane",
-              "grandFather":{
-                "name":"John Jane"
-              },
-              "grandMother":{
-                "name":"Jill Jane"
-              }
-          }
-			};
+			// const pedigree = {
+      //   "homePerson":"John Doe",
+      //   "born":1974,
+      //   "died":"living",
+      //     "father":{
+      //       "name":"John Doe Sr",
+      //         "grandFather":{
+      //           "name":"John Doe Grand"
+      //         },
+      //         "grandMother":{
+      //           "name":"Jane Jill"
+      //         }
+      //     },
+      //     "mother":{
+      //       "name":"Mary Jane",
+      //         "grandFather":{
+      //           "name":"John Jane"
+      //         },
+      //         "grandMother":{
+      //           "name":"Jill Jane"
+      //         }
+      //     }
+			// };
 
-			console.log(pedigree.homePerson);
+			// console.log(pedigree.homePerson);
+
+			const person = {
+				firstName: '',
+				lastName: '',
+				dateBorn: '',
+				dateDied: '',
+				dateMarried: '',
+				placeBorn: '',
+				placeDied: ''
+			}
 
       })(window, document)
 		</script>
