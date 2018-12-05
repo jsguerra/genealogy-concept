@@ -115,7 +115,9 @@
 
 			// console.log(pedigree.homePerson);
 
-			const person = {
+			// Literal Notation
+			// =====================
+			const personUnique = {
 				firstName: '',
 				lastName: '',
 				dateBorn: '',
@@ -123,6 +125,22 @@
 				dateMarried: '',
 				placeBorn: '',
 				placeDied: ''
+			}
+
+			// Objet Constructor Notation
+			function Person(firstName, lastName, dateBorn, dateDied, dateMarried, placeBorn, placeDied) {
+				this.firstName = firstName;
+				this.lastName = lastName;
+				this.dateBorn = dateBorn;
+				this.dateDied = dateDied;
+				this.dateMarried = dateMarried;
+				this.placeBorn = placeBorn;
+				this.placeDied = placeDied;
+				this.age = function() {
+					if (dateBorn && dateDied) {
+						return this.dateDied - this.dateBorn;
+					}
+				};
 			}
 
       })(window, document)
