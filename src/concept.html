@@ -136,12 +136,19 @@
 				this.dateMarried = dateMarried;
 				this.placeBorn = placeBorn;
 				this.placeDied = placeDied;
-				this.age = function() {
-					if (dateBorn && dateDied) {
+				this.lifeAge = function() {
+					if (dateBorn != null && dateDied != null) {
 						return this.dateDied - this.dateBorn;
+					} else {
+						console.log('no age can be calculated');
 					}
 				};
 			}
+
+			// test person
+			const newPerson = new Person('Jose', 'Guerra', null, 2020, null, 'Valle Hermoso', 'London');
+
+			console.log(newPerson.lifeAge());
 
       })(window, document)
 		</script>
