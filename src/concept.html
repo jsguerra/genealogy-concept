@@ -123,6 +123,27 @@
 
 			console.log(newPerson);
 
+			// Using ES6 to create an Object
+
+			class Ancestor {
+				constructor(firstName, lastName, dateBorn, dateDied) {
+					this.firstName = firstName;
+					this.lastName = lastName;
+					this.dateBorn = dateBorn;
+					this.dateDied = dateDied;
+				}
+
+				name() {
+					return this.firstName + ' ' + this.lastName;
+				}
+			}
+
+			let ancestor1 = new Ancestor('Jose', 'Guerra', 1974, 2074);
+
+			console.log(ancestor1);
+			let ancestor1Name = ancestor1.name();
+			console.log(ancestor1Name);
+
       })(window, document)
 		</script>
 	</body>
