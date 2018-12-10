@@ -109,6 +109,9 @@
 
 			console.log(homePerson);
 
+			// Replaced table content with object data
+			document.querySelector('#homePerson').textContent = homePerson.name;
+
 			// Objet Constructor Notation
 			// ==============================
 			function Person(firstName, lastName, dateBorn, dateDied, dateMarried, placeBorn, placeDied) {
