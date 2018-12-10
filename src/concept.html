@@ -100,7 +100,17 @@
 				placeDied: ''
 			}
 
+			// Literal Notation
+			// =====================
+			const homePerson = {}
+
+			homePerson.name = 'Jose Maria Guerra';
+			homePerson.birth = 1907;
+
+			console.log(homePerson);
+
 			// Objet Constructor Notation
+			// ==============================
 			function Person(firstName, lastName, dateBorn, dateDied, dateMarried, placeBorn, placeDied) {
 				this.firstName = firstName;
 				this.lastName = lastName;
@@ -124,7 +134,7 @@
 			console.log(newPerson);
 
 			// Using ES6 to create an Object
-
+			// ===================================
 			class Ancestor {
 				constructor(firstName, lastName, dateBorn, dateDied) {
 					this.firstName = firstName;
