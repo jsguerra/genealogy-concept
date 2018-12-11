@@ -37,8 +37,8 @@
 								</tr>
 								<tr>
 									<td rowspan="4" id="homePerson" class="person line-bottom">Home Person</td>
-									<td rowspan="2" class="person line-bottom">Father</td>
-									<td class="person grand line-bottom">Grandfather</td>
+									<td rowspan="2" id="Father" class="person line-bottom">Father</td>
+									<td id="Grandfather" class="person grand line-bottom">Grandfather</td>
 								</tr>
 								<tr>
 									<td class="bio grandDate line-left-down">
@@ -106,8 +106,15 @@
 
 			homePerson.name = 'Jose Maria Guerra';
 			homePerson.birth = 1907;
+			homePerson.died = 2005;
 
 			console.log(homePerson);
+
+			const father = {
+				name: 'Gillermo Guerra',
+				born: 1887,
+				died: 1930
+			}
 
 			// Replaced table content with object data
 			document.querySelector('#homePerson').textContent = homePerson.name;
