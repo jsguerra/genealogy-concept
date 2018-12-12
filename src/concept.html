@@ -153,15 +153,18 @@
 					this.yearBorn = yearBorn;
 					this.yearDied = yearDied;
 				}
-
 				age() {
+					var age = (this.yearDied - this.yearBorn);
 					return (this.yearDied - this.yearBorn);
+					console.log(age);
 				}
 			}
 
 			var ancestor1 = new Ancestor('Jose Guerra', 1974, 2074);
+			var ancestor2 = new Ancestor('Jose Maria Guerra', 1907, 2005);
 
 			console.log(ancestor1);
+			console.log(ancestor2);
 			ancestor1.age();
 
       })(window, document)
