@@ -148,23 +148,21 @@
 			// Using ES6 to create an Object
 			// ===================================
 			class Ancestor {
-				constructor(firstName, lastName, dateBorn, dateDied) {
-					this.firstName = firstName;
-					this.lastName = lastName;
-					this.dateBorn = dateBorn;
-					this.dateDied = dateDied;
+				constructor(name, yearBorn, yearDied) {
+					this.name = name;
+					this.yearBorn = yearBorn;
+					this.yearDied = yearDied;
 				}
 
-				name() {
-					return this.firstName + ' ' + this.lastName;
+				age() {
+					return (this.yearDied - this.yearBorn);
 				}
 			}
 
-			let ancestor1 = new Ancestor('Jose', 'Guerra', 1974, 2074);
+			var ancestor1 = new Ancestor('Jose Guerra', 1974, 2074);
 
 			console.log(ancestor1);
-			let ancestor1Name = ancestor1.name();
-			console.log(ancestor1Name);
+			ancestor1.age();
 
       })(window, document)
 		</script>
