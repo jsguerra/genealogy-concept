@@ -82,7 +82,21 @@
 		<footer>
 			&copy; 2018 Pedigree concept
 		</footer>
-		<script type="module">
+		<script>
+			// Using ES6 to create an Object
+			// ===================================
+			class Ancestor {
+				constructor(name, yearBorn, yearDied) {
+					this.name = name;
+					this.born = yearBorn;
+					this.died = yearDied;
+				}
+				ageless() {
+					return (this.died - this.born) + ' years old';
+				}
+			}
+
+			var homePerson = new Ancestor('Jose Maria Guerra', 1907, 2005);
 		</script>
 	</body>
 </html>
