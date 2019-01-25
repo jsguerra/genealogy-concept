@@ -97,8 +97,12 @@
 			}
 
 			const homePerson = new Ancestor('Jose Maria Guerra', 1907, 2005);
-			const father = new Ancestor('Guillermo Guerra', null, null);
-			const mother = new Ancestor('Margarita Ramirez', null, null);
+				const father = new Ancestor('Guillermo Guerra', null, null);
+					const paternalGrandfather = new Ancestor(null, null, null);
+					const paternalGrandmother = new Ancestor('Antonia Guerra', null, null);
+				const mother = new Ancestor('Margarita Ramirez', null, null);
+					const maternalGrandfather = new Ancestor('Jacinto Ramirez', null, null);
+					const maternalGrandmother = new Ancestor('Florez', null, null);
 		</script>
 	</body>
 </html>
