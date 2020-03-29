@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>Jose Maria Guerra</title>
+		<meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+	</head>
+
+	<body>
+    <header>
+      <span class="site-title">Jose Maria Guerra</span>
+    </header>
+		<main>
+			<article class="container">
+				<header>
+					<h1>Jose Maria Guerra Profile Page</h1>
+					<p class="lead-text">This tree is a table based tree</p>
+				</header>
+				<div class="pedigree-container">
+						<h2>Example Pedgree Chart</h2>
+						<div class="entry-container">
+							<div class="entry-profile">
+								<img src="https://placehold.it/150x150" />
+							</div>
+							<div class="entry-content">
+								<p>This is my lorem ipsum biography and anything else that will go into this section.</p>
+							</div>
+						</div>
+						<table>
+							<tbody>
+								<tr>
+									<th>Home Person</th>
+									<th>Parents</th>
+									<th>Grand Parents</th>
+								</tr>
+								<tr>
+									<td rowspan="4" id="homePerson" class="person line-bottom">Home Person</td>
+									<td rowspan="2" id="Father" class="person line-bottom">Father</td>
+									<td id="Grandfather" class="person grand line-bottom">Grandfather</td>
+								</tr>
+								<tr>
+									<td class="bio grandDate line-left-down">
+											<progress value="70" max="100">70 %</progress>
+											Date here</td>
+								</tr>
+								<tr>
+									<td rowspan="2" class="bio line-left-down"><progress value="70" max="100">70 %</progress>
+										Date here</td>
+									<td class="person line-bottom grand line-left-up">Grandmother</td>
+								</tr>
+								<tr>
+									<td class="bio grandDate line-left"><progress value="70" max="100">70 %</progress>
+										Date here</td>
+								</tr>
+								<tr>
+									<td rowspan="4" class="bio"><progress value="70" max="100">70 %</progress>
+										Date here</td>
+									<td rowspan="2" class="person line-bottom line-left-up">Mother</td>
+									<td class="person grand line-bottom">Grandfther</td>
+								</tr>
+								<tr>
+									<td class="bio grandDate line-left-down"><progress value="70" max="100">70 %</progress>
+										Date Here</td>
+								</tr>
+								<tr>
+									<td rowspan="2" class="bio"><progress value="70" max="100">70 %</progress>
+										Date Here</td>
+									<td class="person grand line-bottom line-left-up">Grandmother</td>
+								</tr>
+								<tr>
+									<td class="bio grandDate line-left"><progress value="70" max="100">70 %</progress>
+										Date here</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+			</article>
+		</main>
+
+		<footer>
+			<p class="copy">&copy; Copyright <span>2019</span></p>
+		</footer>
+		<script>
+			// Using ES6 to create an Object
+			// ===================================
+			class Ancestor {
+				constructor(name, yearBorn, yearDied) {
+					this.name = name;
+					this.born = yearBorn;
+					this.died = yearDied;
+				}
+				ageless() {
+					return (this.died - this.born) + ' years old';
+				}
+			}
+
+			// Custom Ancestry Variables
+			// ===================================
+			const homePerson = new Ancestor('Jose Maria Guerra', 1907, 2005);
+				const father = new Ancestor('Guillermo Guerra', null, null);
+					const paternalGrandfather = new Ancestor(null, null, null);
+					const paternalGrandmother = new Ancestor('Antonia Guerra', null, null);
+				const mother = new Ancestor('Margarita Ramirez', null, null);
+					const maternalGrandfather = new Ancestor('Jacinto Ramirez', null, null);
+					const maternalGrandmother = new Ancestor('Florez', null, null);
+
+			// Target parts of the pedigree
+			// ===================================
+		</script>
+	</body>
+</html>
