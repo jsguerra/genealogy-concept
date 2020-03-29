@@ -1,16 +1,16 @@
 {
-	"name": "project-name",
-	"version": "0.0.1",
-	"description": "A description for your project.",
-	"main": "./dist/your-main-js-file.js",
+	"name": "genealogy-concept",
+	"version": "1.0.0",
+	"description": "A genealogy concept website for personal project.",
+	"main": "./dist/js/main.js",
 	"author": {
-		"name": "YOUR NAME",
-		"url": "http://link-to-your-website.com"
+		"name": "Jose Guerra",
+		"url": "https://joseguerra.uk"
 	},
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "http://link-to-your-git-repo.com"
+		"url": "git+https://github.com/jsguerra/genealogy-concept.git"
 	},
 	"boilerplate": {
 		"version": "2.2.6",
