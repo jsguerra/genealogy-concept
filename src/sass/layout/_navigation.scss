@@ -1,0 +1,8 @@
+.site-navigation {
+
+}
+
+.main-nav {
+  @include list-reset;
+  display: flex;
+}
