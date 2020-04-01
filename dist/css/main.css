@@ -403,3 +403,37 @@ table .line-left-up {
 table .line-left {
   border-left: 1px solid white;
 }
+
+/* line 1, src/sass/layout/_header.scss */
+.site-header {
+  background-color: #f9f9f9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 5, src/sass/layout/_navigation.scss */
+.main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 16, src/sass/abstracts/_mixins.scss */
+.main-nav, .main-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 22, src/sass/abstracts/_mixins.scss */
+.main-nav li {
+  margin: 0;
+  padding: 0;
+}
