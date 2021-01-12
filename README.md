@@ -2,5 +2,3 @@
 An HTML5 genealogy website concept for a personal family tree. It will integrate emperor js for displaying pedigree charts.
 
 Design coming soon
-
-Work in progress
