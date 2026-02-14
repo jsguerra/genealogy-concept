@@ -105,3 +105,26 @@ td {
 .pb-10 {
   padding-bottom: 1.5rem;
 }
+
+.family-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+  max-width: 90%;
+}
+
+.family-list li {
+  border-bottom: 1px solid #bbb;
+  padding: 5px 7px;
+}
+
+.family-list li.family-head {
+  font-weight: bold;
+  border-bottom: 3px solid #bbb;
+}
+
+.family-details {
+  font-size: 0.9rem;
+  color: #666;
+}
